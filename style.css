@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap') */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 1500px;
+}
+body {
+    background-color: #FEFEFA;
+    font-family: montserrat, sans-serif;
+    max-width: 1200px;
+    max-height: 1200px;
+    /*min-height: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume {
+    display: flex;
+    padding-top: 40px;
+}
+
+/* ВЕРХНЯЯ НАВИГАЦИЯ  ВЕРХНЯЯ НАВИГАЦИЯ  ВЕРХНЯЯ НАВИГАЦИЯ  ВЕРХНЯЯ НАВИГАЦИЯ */
+.navbar {
+    /* position: relative; */
+    position: fixed;
+    display: block;
+    background-color: #494E5F;
+    margin-bottom: 5px;
+    width: 100%; max-width: 1200px;
+    height: 50px;
+    box-shadow: 3px 3px 3px #494E5F;
+}
+
+.navbar ul {
+    position: absolute; right: 20px;
+    list-style: none;
+    margin: 0; padding: 0;
+    margin-top: 10px;
+    display: flex;
+    max-width: 140px;
+}
+
+.navbar ul li a {
+    padding-right: 10 px;
+    font-weight: 500;
+    display: flex;
+    color: #FFE7D4;
+}
+
+.navbar ul li:hover {
+    font-weight: 600;
+    color: #F7F7E6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ВСПЛЫВАЮЩЕЕ ОКНО С QR-CODE ВСПЛЫВАЮЩЕЕ ОКНО С QR-CODE ВСПЛЫВАЮЩЕЕ ОКНО С QR-CODE */
+
+.menu {
+    position: relative;
+}
+
+.fon {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 238px; height: 238px;
+    background-color: #494E5F;
+    /* left: 50%; */
+    right: -50px;
+    transform: translate(-50%);
+    top: -999px;
+    transition: .5s all linear;
+    /* border-radius: 5%; */
+}
+
+#callback {
+    display: none;
+}
+
+.fon .close {
+    color: white ;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    font-size: 30px;
+    top: 0px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.fon .qr {
+    display: block;
+    margin: auto; padding-top: 30px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+#callback:checked~.fon {
+    top: 100px;
+}
+
+/* ЛЕВАЯ ЧАСТЬ РЕЗЮМЕ  ЛЕВАЯ ЧАСТЬ РЕЗЮМЕ  ЛЕВАЯ ЧАСТЬ РЕЗЮМЕ  ЛЕВАЯ ЧАСТЬ РЕЗЮМЕ */
+
+.l_side {
+    background-color: #494E5F;
+    width: 41.67%;
+}
+
+.data {
+    max-width: 500px;
+    color: #FFE7D4;
+    margin-top: 50px;
+    border-spacing: 20px;
+}
+.avatar {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    /* border-radius: 20px; */
+    /* float: left;
+    width: 25%; */
+    margin:auto;
+}
+
+.h1 {
+    display: block;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-top: 30px;
+}
+.h4 {
+    display: block;
+    text-align: center;
+    font: size 24px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-bottom: 30px; padding-top: 20px;
+}
+
+.line {
+    max-width: 500px;
+    text-align: center;
+    color: #FFE7D4;
+    height: 3px;
+}
+
+.spisok_l {
+    max-width: 500px;
+    color: #FFE7D4;
+    line-height: 35px;
+    padding-bottom: 30px;
+}
+
+.text_l {
+    color: #FFE7D4;
+    line-height: 35px;
+    font-size: 18px;
+    max-width: 450px;
+    padding-top: 10px; padding-bottom: 20px;
+}
+
+.p_l {
+    padding-left: 50px;
+}
+
+.h3_l {
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 50px; padding-top: 20px; padding-bottom: 20px;
+    letter-spacing: 2px;
+    }
+
+.spisok_l ul {
+    padding-left: 70px; padding-bottom: 20px; padding-top: 10px;
+    font-size: 18px;
+}
+
+/* a {
+    color: #FFE7D4;
+    text-decoration: none;
+} */
+
+.spisok_l a {
+    color: #FFE7D4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F7F7E6;
+    font-weight: 600;
+}
+
+.l_side div:first-child {
+    margin-top: 50px;
+}
+
+.l_side div:last-child {
+    margin-bottom: 50px;
+}
+
+/* ПРАВАЯ ЧАСТЬ РЕЗЮМЕ  ПРАВАЯ ЧАСТЬ РЕЗЮМЕ  ПРАВАЯ ЧАСТЬ РЕЗЮМЕ  ПРАВАЯ ЧАСТЬ РЕЗЮМЕ */
+
+.r_side {
+    width: 58.33%;
+    background-color: #f7f7e6;
+}
+
+.r_side div:first-child {
+    margin-top: 50px;
+}
+
+
+.spisok_r {
+    display: block;
+    max-width: 85%;
+    background-color: #F7F7E6;
+    color: #494E5F;
+    font-size: 18px;
+    line-height: 35px;
+    margin-left: auto; margin-right: auto; margin-bottom: 50px;
+}
+
+.spisok_r ul {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.h3_r {
+    background-color: #FFE7D4;
+    max-width: 550px;
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 40px; padding-top: 10px; padding-bottom: 10px;
+    letter-spacing: 2px;
+    }
+
+.p_r {
+    padding-left: 40px; padding-top: 20px;
+    max-width: 100%;
+}
+
+.spisok_r a {
+    color: #494E5F;
+    text-decoration: none;
+}
+
+.spisok_r a:hover {
+    font-weight: 600;
+}
