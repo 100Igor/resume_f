@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap') */
 
 * {
     margin: 0;
@@ -21,102 +20,20 @@ body {
 
 .resume {
     display: flex;
-    padding-top: 40px;
+    padding-top: 20px;
+    max-width: 1200px;
+    max-height: 3000px;
 }
 
-/* ВЕРХНЯЯ НАВИГАЦИЯ  ВЕРХНЯЯ НАВИГАЦИЯ  ВЕРХНЯЯ НАВИГАЦИЯ  ВЕРХНЯЯ НАВИГАЦИЯ */
-.navbar {
-    /* position: relative; */
-    position: fixed;
-    display: block;
-    background-color: #494E5F;
-    margin-bottom: 5px;
-    width: 100%; max-width: 1200px;
-    height: 50px;
-    box-shadow: 3px 3px 3px #494E5F;
-}
-
-.navbar ul {
-    position: absolute; right: 20px;
-    list-style: none;
-    margin: 0; padding: 0;
-    margin-top: 10px;
-    display: flex;
-    max-width: 140px;
-}
-
-.navbar ul li a {
-    padding-right: 10 px;
-    font-weight: 500;
-    display: flex;
-    color: #FFE7D4;
-}
-
-.navbar ul li:hover {
-    font-weight: 600;
-    color: #F7F7E6;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* ВСПЛЫВАЮЩЕЕ ОКНО С QR-CODE ВСПЛЫВАЮЩЕЕ ОКНО С QR-CODE ВСПЛЫВАЮЩЕЕ ОКНО С QR-CODE */
-
-.menu {
-    position: relative;
-}
-
-.fon {
-    display: block;
-    position: absolute;
-    margin: auto;
-    width: 238px; height: 238px;
-    background-color: #494E5F;
-    /* left: 50%; */
-    right: -50px;
-    transform: translate(-50%);
-    top: -999px;
-    transition: .5s all linear;
-    /* border-radius: 5%; */
-}
-
-#callback {
-    display: none;
-}
-
-.fon .close {
-    color: white ;
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    font-size: 30px;
-    top: 0px;
-    right: 7px;
-    cursor: pointer;
-}
-
-.fon .qr {
-    display: block;
-    margin: auto; padding-top: 30px;
-}
-
-.btn {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    cursor: pointer;
-    transition: .3s all;
-}
-
-#callback:checked~.fon {
-    top: 100px;
-}
 
 /* ЛЕВАЯ ЧАСТЬ РЕЗЮМЕ  ЛЕВАЯ ЧАСТЬ РЕЗЮМЕ  ЛЕВАЯ ЧАСТЬ РЕЗЮМЕ  ЛЕВАЯ ЧАСТЬ РЕЗЮМЕ */
 
 .l_side {
     background-color: #494E5F;
-    width: 41.67%;
+    max-width: 500px;
+    max-height: 100%;
 }
+
 
 .data {
     max-width: 500px;
@@ -128,7 +45,6 @@ body {
     display: block;
     max-width: 300px;
     max-height: 300px;
-    /* border-radius: 20px; */
     /* float: left;
     width: 25%; */
     margin:auto;
@@ -145,7 +61,7 @@ body {
 .h4 {
     display: block;
     text-align: center;
-    font: size 24px;
+    font-size: 24px;
     color: white;
     font-weight: 400;
     letter-spacing: 2px;
@@ -170,18 +86,20 @@ body {
     color: #FFE7D4;
     line-height: 35px;
     font-size: 18px;
-    max-width: 450px;
+    /*max-width: 450px;*/
+    max-width: 90%;
     padding-top: 10px; padding-bottom: 20px;
 }
 
 .p_l {
-    padding-left: 50px;
+    /*padding-left: 50px;*/
+    padding-left: 10%;
 }
 
 .h3_l {
     font-size: 28px;
     font-weight: 600;
-    padding-left: 50px; padding-top: 20px; padding-bottom: 20px;
+    padding-left: 10%; padding-top: 20px; padding-bottom: 20px;
     letter-spacing: 2px;
     }
 
@@ -190,10 +108,6 @@ body {
     font-size: 18px;
 }
 
-/* a {
-    color: #FFE7D4;
-    text-decoration: none;
-} */
 
 .spisok_l a {
     color: #FFE7D4;
@@ -216,8 +130,9 @@ a:hover {
 /* ПРАВАЯ ЧАСТЬ РЕЗЮМЕ  ПРАВАЯ ЧАСТЬ РЕЗЮМЕ  ПРАВАЯ ЧАСТЬ РЕЗЮМЕ  ПРАВАЯ ЧАСТЬ РЕЗЮМЕ */
 
 .r_side {
-    width: 58.33%;
+    /*width: 58.33%;*/
     background-color: #f7f7e6;
+    max-width: 700px;
 }
 
 .r_side div:first-child {
@@ -256,11 +171,101 @@ a:hover {
     max-width: 100%;
 }
 
-.spisok_r a {
-    color: #494E5F;
-    text-decoration: none;
-}
+@media (max-width: 1000px){
 
-.spisok_r a:hover {
-    font-weight: 600;
+    /* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*/
+
+    .l_side {
+        max-width: 420px;
+        max-height: 100%;
+    }
+
+    .avatar {
+        max-width: 200px;
+        max-height: 200px;
+        /*width: 25%;*/
+    }
+
+    .h1 {
+        display: block;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding-top: 20px;
+    }
+    .h4 {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        color: white;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding-bottom: 20px; padding-top: 10px;
+    }
+
+    .text_l {
+        color: #FFE7D4;
+        line-height: 30px;
+        font-size: 14px;
+        /*max-width: 450px;*/
+        max-width: 90%;
+        padding-top: 10px; padding-bottom: 10px;
+    }
+
+    .p_l {
+        padding-left: 10%;
+    }
+    
+    .h3_l {
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 10%; padding-top: 15px; padding-bottom: 15px;
+        letter-spacing: 1px;
+        }
+    
+    .spisok_l ul {
+        padding-left: 15%; padding-bottom: 10px; padding-top: 10px;
+        font-size: 14px;
+    }
+
+        
+            /* ПРАВАЯ СТОРОНА*/     /* ПРАВАЯ СТОРОНА*/     /* ПРАВАЯ СТОРОНА*/
+
+    .r_side {
+        max-width: 580px;
+        max-height: 100%;
+        background-color: #F7F7E6;
+    }
+
+    .spisok_r {
+        display: block;
+        max-width: 85%;
+        background-color: #F7F7E6;
+        color: #494E5F;
+        font-size: 14px;
+        line-height: 30px;
+        margin-left: auto; margin-right: auto; margin-bottom: 0px;
+    }
+    
+    .h3_r {
+        background-color: #FFE7D4;
+        max-width: 85%;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 20px; padding-top: 10px; padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    
+    .p_r {
+        padding-left: 20px; padding-top: 10px;
+        max-width: 85%;
+    }
+
+    .spisok_r ul {
+        padding-left: 5%; padding-bottom: 10px; padding-top: 10px;
+        font-size: 14px;
+        max-width: 85%;
+    }
+    
 }
