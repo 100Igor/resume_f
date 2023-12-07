@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-html {
+.html {
     height: 1500px;
 }
 body {
@@ -20,7 +20,7 @@ body {
 
 .resume {
     display: flex;
-    padding-top: 20px;
+    padding-top: 0px;
     max-width: 1200px;
     max-height: 3000px;
 }
@@ -88,7 +88,7 @@ body {
     font-size: 18px;
     /*max-width: 450px;*/
     max-width: 90%;
-    padding-top: 10px; padding-bottom: 20px;
+    padding-top: 10px; padding-bottom: 50px;
 }
 
 .p_l {
@@ -176,14 +176,14 @@ a:hover {
     /* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*/
 
     .l_side {
-        max-width: 420px;
+        /*max-width: 420px;*/
+        max-width: 41.67%;
         max-height: 100%;
     }
 
     .avatar {
-        max-width: 200px;
-        max-height: 200px;
-        /*width: 25%;*/
+        width: 60%;
+        height: 60%
     }
 
     .h1 {
@@ -208,7 +208,6 @@ a:hover {
         color: #FFE7D4;
         line-height: 30px;
         font-size: 14px;
-        /*max-width: 450px;*/
         max-width: 90%;
         padding-top: 10px; padding-bottom: 10px;
     }
@@ -233,7 +232,7 @@ a:hover {
             /* ПРАВАЯ СТОРОНА*/     /* ПРАВАЯ СТОРОНА*/     /* ПРАВАЯ СТОРОНА*/
 
     .r_side {
-        max-width: 580px;
+        max-width: 58.33%;
         max-height: 100%;
         background-color: #F7F7E6;
     }
@@ -255,7 +254,7 @@ a:hover {
         font-weight: 500;
         padding-left: 20px; padding-top: 10px; padding-bottom: 10px;
         letter-spacing: 1px;
-    }
+        }
     
     .p_r {
         padding-left: 20px; padding-top: 10px;
@@ -267,5 +266,22 @@ a:hover {
         font-size: 14px;
         max-width: 85%;
     }
-    
 }
+
+@media (max-width: 500px)
+{
+    .l_side {
+        max-width: 41.67%;
+        max-height: 100%;
+    }
+
+    .r_side {
+        max-width: 58.33%;
+        max-height: 100%;
+    }
+
+    .avatar {
+        max-width: 60%;
+        max-height: 60%;
+    }
+} 
