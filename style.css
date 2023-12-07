@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -80,6 +79,7 @@ body {
     color: #FFE7D4;
     line-height: 35px;
     padding-bottom: 30px;
+    margin-left: auto; margin-right: auto;
 }
 
 .text_l {
@@ -182,6 +182,7 @@ a:hover {
     }
 
     .avatar {
+        /*max-width: 200px; max-height: 200px;*/
         width: 60%;
         height: 60%
     }
@@ -207,7 +208,8 @@ a:hover {
     .text_l {
         color: #FFE7D4;
         line-height: 30px;
-        font-size: 14px;
+        font-size: 16px;
+        /*max-width: 450px;*/
         max-width: 90%;
         padding-top: 10px; padding-bottom: 10px;
     }
@@ -224,14 +226,16 @@ a:hover {
         }
     
     .spisok_l ul {
-        padding-left: 15%; padding-bottom: 10px; padding-top: 10px;
-        font-size: 14px;
+        padding-left: 10%; padding-bottom: 10px; padding-top: 10px;
+        font-size: 16px;
+        line-height: 30px;
     }
 
         
             /* ПРАВАЯ СТОРОНА*/     /* ПРАВАЯ СТОРОНА*/     /* ПРАВАЯ СТОРОНА*/
 
     .r_side {
+        /*max-width: 580px;*/
         max-width: 58.33%;
         max-height: 100%;
         background-color: #F7F7E6;
@@ -242,7 +246,7 @@ a:hover {
         max-width: 85%;
         background-color: #F7F7E6;
         color: #494E5F;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 30px;
         margin-left: auto; margin-right: auto; margin-bottom: 0px;
     }
@@ -262,19 +266,56 @@ a:hover {
     }
 
     .spisok_r ul {
-        padding-left: 5%; padding-bottom: 10px; padding-top: 10px;
-        font-size: 14px;
+        padding-left: 8%; padding-bottom: 10px; padding-top: 10px;
+        font-size: 16px;
         max-width: 85%;
     }
+    
 }
 
-@media (max-width: 500px)
+@media (max-width: 550px)
 {
+    .body {
+        margin-left: 0px;
+        margin-right: 0xp;
+    }
+
     .l_side {
         max-width: 41.67%;
         max-height: 100%;
     }
 
+    .spisok_l {
+        line-height: 25px;
+        font-size: 14px;
+    }
+    
+    .spisok_l ul {
+        padding-left: 10%; padding-bottom: 10px; padding-top: 10px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .text_l {
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    .h1 {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding-top: 15px;
+    }
+    .h4 {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding-bottom: 20px; padding-top: 10px;
+    }
+
+    /* ПРАВАЯ СТОРОНА*/     /* ПРАВАЯ СТОРОНА*/     /* ПРАВАЯ СТОРОНА*/
+    
     .r_side {
         max-width: 58.33%;
         max-height: 100%;
@@ -283,5 +324,32 @@ a:hover {
     .avatar {
         max-width: 60%;
         max-height: 60%;
+    }
+
+    .spisok_r {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .spisok_r ul {
+        padding-left: 10%; padding-bottom: 10px; padding-top: 10px;
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .h3_r {
+        max-width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 0px; padding-top: 10px; padding-bottom: 10px;
+        letter-spacing: 1px;
+        text-align: center;
+        }
+    
+    .p_r {
+        padding-left: 10px;
+        padding-top: 10px;
+        max-width: 100%;
     }
 } 
