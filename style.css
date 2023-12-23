@@ -171,6 +171,22 @@ a:hover {
     max-width: 100%;
 }
 
+        /*СЧЕТЧИК / СЧЕТЧИК / СЧЕТЧИК / */
+    
+.footer {
+position: absolute;
+bottom: 10px;
+background-color: #f7f7e6;
+}
+            
+.count {
+/*position: absolute;*/
+float: right;
+color: #cccccf;
+font-size: 14px;
+}
+
+
 @media (max-width: 1000px){
 
     /* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*//* ЛЕВАЯ СТОРОНА*/
