@@ -111,7 +111,6 @@ body {
 
 .spisok_l a {
     color: #FFE7D4;
-    text-decoration: none;
 }
 
 a:hover {
@@ -173,7 +172,6 @@ a:hover {
 
 .spisok_r a {
     color: #494E5F;
-    text-decoration: none;
 }
 
 .spisok_r a:hover {
