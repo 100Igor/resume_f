@@ -171,6 +171,15 @@ a:hover {
     max-width: 100%;
 }
 
+.spisok_r a {
+    color: #494E5F;
+    text-decoration: none;
+}
+
+.spisok_r a:hover {
+    font-weight: 600;
+}
+
         /*СЧЕТЧИК / СЧЕТЧИК / СЧЕТЧИК / */
     
 .footer {
